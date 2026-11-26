@@ -1,5 +1,5 @@
 # PROJECT FENRIR v0.1.0
-
+![PROJECT FENRIR](assets/fenrir-banner.png)
 A defensive, local-first cybersecurity monitoring prototype for Kali Linux on WSL2.
 This starter release provides a FastAPI dashboard, event journal, local health checks,
 and a Rust hashing/indicator engine. It does **not** propagate, exploit, or modify
