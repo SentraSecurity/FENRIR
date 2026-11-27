@@ -188,57 +188,57 @@ Requirements
 - Internet connection for external intelligence sources
 
 1. Clone the repository
-
+'''bash
 git clone https://github.com/SentraSecurity/FENRIR.git
 cd FENRIR
 unzip -o project_fenrir_v0_4.zip
-
+'''
 2. Create a virtual environment
-
+'''bash
 python3 -m venv .venv
 source .venv/bin/activate
-
+'''
 3. Install dependencies
-
+'''bash
 pip install --upgrade pip
 pip install -r requirements.txt
-
+'''
 4. Install Ollama
-
+'''bash
 curl -fsSL https://ollama.com/install.sh | sh
-
+'''
 Start the Ollama service:
-
+'''bash
 ollama serve
-
+'''
 Open another terminal and download the model:
-
+'''bash
 ollama pull qwen2.5:1.5b
-
+'''
 5. Configure environment
-
+'''bash
 cp .env.example .env
-
+'''
 Review the configuration before launching the application.
 
 6. Launch
 
 If the agent CLI entry point is available:
-
+'''bash
 python3 -m fenrir.agent.core
-
+'''
 If the FastAPI application is configured:
-
+'''bash
 uvicorn fenrir.app:app --host 127.0.0.1 --port 8080
-
+'''
 Dashboard:
-
+'''bash
 http://127.0.0.1:8080
-
+'''
 API documentation:
-
+'''bash
 http://127.0.0.1:8080/docs
-
+'''
 Note: Launch commands depend on the modules included in the checked-out version. The v0.4 architecture and all planned components are not necessarily implemented yet.
 
 Development Roadmap
