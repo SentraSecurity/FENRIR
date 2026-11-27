@@ -194,6 +194,7 @@ Requirements
 git clone https://github.com/SentraSecurity/FENRIR.git
 cd FENRIR
 unzip -o project_fenrir_v0_4.zip
+cd project_fenrir_v0_4
 ```
 
 3. Create a virtual environment
